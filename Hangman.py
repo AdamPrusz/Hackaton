@@ -21,7 +21,7 @@ print("Password has: ", len(word), "letters")
 current_word = "_" * len(word)
 current_word = list(current_word)
 
-
+print("You can make only 5 mistakes")
 letter = input("Guess the letter: ")
 
 mistakes = 0
@@ -30,8 +30,11 @@ mistakes = 0
 while word:
     if letter in word:
         print ("CORRECT!")
-        index_letter = word.index(letter)
-        current_word[index_letter] = letter
+        for index in range(len(current_word)):
+            if letter == word[index]:
+                current_word[index] = letter
+            else:
+                continue
         print(" ".join(current_word))
         letter = input("Guess the another letter, or guess the full word: ")
     elif letter not in word:
