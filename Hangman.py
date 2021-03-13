@@ -36,10 +36,12 @@ while word:
                 continue
         print(" ".join(current_word))
         letter = input("Guess the another letter, or guess the full word: ")
+        print()
     elif letter not in word:
         mistakes = mistakes + 1
         print("Not correct, numbers of your mistake is: ", mistakes)
         print(" ".join(current_word))
+        print()
         if mistakes < 5:
             letter = input("Guess the another letter, or guess the full word: ")
         else:
