@@ -1,13 +1,8 @@
-# Wisielec:
-# Program, będący implementacją gry "wisielec".
-#
 # Użytkownik ma za zadanie odgadnąć hasło, które ukryte jest w programie.
 # Program pokazuje ile liter ma hasło i te litery, które zostały już odgadnięte
 # Użytkownik podaje po jednej literze. Użytkownik ma ograniczoną ilość prób.
 # W każdym momencie, zamiast podania litery użytkownik może spróbować odgadnąć całe hasło.
-# Popraw kod wisielca, tak by pobierać hasła do gry z pliku hangman.json. Plik powinnien zawierać conamniej jedno
-# zagnieżdżenie odpowiadające kategoriom, które użytkownik może wybrać w grze. Kategorie pobrane z pliku JSON pojawiają
-# się jako elementy menu start.
+
 
 
 game = {
