@@ -4,7 +4,6 @@
 # W każdym momencie, zamiast podania litery użytkownik może spróbować odgadnąć całe hasło.
 
 
-
 game = {
     "IT language": "python",
     "city": "berlin",
@@ -41,14 +40,18 @@ while word:
         mistakes = mistakes + 1
         print("Not correct, numbers of your mistake is: ", mistakes)
         print(" ".join(current_word))
-        letter = input("Guess the another letter, or guess the full word: ")
+        if mistakes < 5:
+            letter = input("Guess the another letter, or guess the full word: ")
+        else:
+            print("GAME OVER")
+            print("The word is: ", word)
+            break
     if letter == word:
         print("CONGRATS! YOU WON")
         print("The word is: ", word)
         break
-    if mistakes == 5:
-        print("GAME OVER, YOU LOSE")
-        break
+
+
 
 
 
